@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "20261c9e-f7ef-4c4f-bfa9-67752b3c83b8",
+		"name": "Gente!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39369444"
+	},
+	"item": [
+		{
+			"name": "GET ALL /tareas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/<id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/67377ea3f0eec66c42ec60c7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"67377ea3f0eec66c42ec60c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /tareas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"responsable\":\"pedro\",\n    \"descripcion\":\"hacer una bd\",\n    \"habilidades\":[\"ia\"],\n    \"segmentos\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /tareas/<id>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"segmentos\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/673791402d3c9d6a29c11536",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"673791402d3c9d6a29c11536"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE tareas/<id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/67377ea3f0eec66c42ec60c7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"67377ea3f0eec66c42ec60c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL /colaboradores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /colaboradores/<id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/673781fda2e474f2bf2f8048",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"673781fda2e474f2bf2f8048"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /colaboradores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"migue\",\n    \"email\":\"migue@uma.es\",\n    \"habilidades\":[\n        \"ia\",\n        \"seguridad\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /colaboradores/<id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/673781fda2e474f2bf2f8048",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"673781fda2e474f2bf2f8048"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL /colaboradores/<id>/habilidades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/6737828035ea85adaa6d13de/habilidades",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"6737828035ea85adaa6d13de",
+						"habilidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /colaboradores/<id>/habilidades",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"habilidad\":\"doctorado\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/6737828035ea85adaa6d13de/habilidades",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"6737828035ea85adaa6d13de",
+						"habilidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /colaboradores/<id>/habilidades",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"habilidad\":\"doctorado\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/6737828035ea85adaa6d13de/habilidades",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"6737828035ea85adaa6d13de",
+						"habilidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/asignaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/asignaciones",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"asignaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /tareas/asignaciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"carlosCanal\",\n    \"tarea\":\"673794040c01202f240fba1c\",\n    \"segmento\":1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/asignaciones",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"asignaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /tareas/asignaciones/<id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/asignaciones/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"asignaciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/habilidades?habilidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas?habilidad=backend",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas"
+					],
+					"query": [
+						{
+							"key": "habilidad",
+							"value": "backend"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/getTareas?colaborador=carlosCanal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/getTareas?colaborador=carlosCanal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"getTareas"
+					],
+					"query": [
+						{
+							"key": "colaborador",
+							"value": "carlosCanal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /candidatos/asignarColaborador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"migue\",\n    \"tarea\":\"673791402d3c9d6a29c11536\",\n    \"segmento\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/asignarColaborador",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"asignarColaborador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/candidatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/candidatos?tarea=673791402d3c9d6a29c11536",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"candidatos"
+					],
+					"query": [
+						{
+							"key": "tarea",
+							"value": "673791402d3c9d6a29c11536"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tareas/tareasCompletamenteAsignadas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tareas/tareasCompletamenteAsignadas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tareas",
+						"tareasCompletamenteAsignadas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /colaboradores/colaboradoresUsuario?responsable=",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/colaboradores/colaboradoresUsuario?responsable=pedro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"colaboradores",
+						"colaboradoresUsuario"
+					],
+					"query": [
+						{
+							"key": "responsable",
+							"value": "pedro"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
